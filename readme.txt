@@ -22,7 +22,7 @@ How It Works:
 weberncaa constructs a binary tree representing the NCAA tournament bracket. Each internal node represents a game and its winner. Its children are the two previous games and their winners. Each leaf node represents a single NCAA tournament team. After constructing the tree, weberncaa attempts to determine the winner of each game using the output of a Binomial Distribution with k = 1 trials and p = win probability as given by stats.csv. If no data is available, weberncaa defaults to p = 90%. This behavior can be changed by modifying DEFAULT_PROBABILITY in ncaa_functions.hpp.
 
 How To Build:
-weberncaa compiles on Windows with Visual C++ Native Build Tools using the command: "cl /W4 /EHs classes.cpp weberncaa.cpp". It should work with any C++ compiler conforming to C++99 or later.
+weberncaa compiles on Windows with Visual C++ Native Build Tools using the command: "cl /W4 /EHs weberncaa.cpp classes.cpp". It should work with any C++ compiler conforming to C++99 or later.
 
 Issues:
 While technically complete (given its stated limitations), the dataset fails to provide probabilities for a great number of games. In the vast majority of complete runs, weberncaa predicts a number of matchups where the specific round and seed combination has not occurred four times in history, causing a default probability to be used.
