@@ -9,11 +9,11 @@ weberncaa requires two files as input:
 			seed of first team (1-16)
 			seed of second team (1-16)
 			win percentage (0-100)
-		NOTE: Historical data is only represented for matchups that have occurred at least four times!
 	2)	seeds.csv represents the current year's tournament teams with the following schema:
 			seed (1-16)
 			team name (string)
 			region (string) (not used by weberncaa)
+NOTE: Historical data is only represented for matchups that have occurred at least four times!
 			
 Output:
 weberncaa outputs a list of every tournament game by round. The output for each game shows the seed, win probability, and name of the competing teams as well as the seed and name of the winning team. If historical data is not available for a particular round and seed combination, each team's win probability is represented as "??%".
