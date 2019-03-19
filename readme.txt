@@ -4,15 +4,15 @@ weberncaa is a small hobby project that attempts to fill out a viable NCAA tourn
 
 Input:
 weberncaa requires two files as input:
-	1)  stats.csv represents historical tournament data with the following schema:
-			round (1-6)
-			seed of first team (1-16)
-			seed of second team (1-16)
-			win percentage (0-100)
-	2)	seeds.csv represents the current year's tournament teams with the following schema:
-			seed (1-16)
-			team name (string)
-			region (string) (not used by weberncaa)
+  1)  stats.csv represents historical tournament data with the following schema:
+        round (1-6)
+        seed of first team (1-16)
+        seed of second team (1-16)
+        win percentage (0-100)
+  2)  seeds.csv represents the current year's tournament teams with the following schema:
+        seed (1-16)
+        team name (string)
+        region (string) (not used by weberncaa)
 NOTE: Historical data is only represented for matchups that have occurred at least four times!
 			
 Output:
